@@ -13,4 +13,4 @@ console.log(valores.pop())// tira do array
 delete valores[0] // deleta um elemento de uma determinada posição do array
 console.log(valores)
 
-console.log(typeof valores) // Array é umo objeto
+console.log(typeof valores) // Array é umo objeto 
