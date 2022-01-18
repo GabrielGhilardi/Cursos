@@ -11,3 +11,10 @@ const prod2 = {
 }
 
 console.log(prod2)
+
+//Transforma objeto em um arry de chave ou valores 
+const obj = {a:1, b:2, c:3}
+console.log(Object.values(obj))
+console.log(Object.keys(obj))
+//Tranforma em uma matriz de chave e valores
+console.log(Object.entries(obj))
