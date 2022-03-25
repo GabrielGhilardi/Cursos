@@ -10,7 +10,20 @@
             padding: 20px;
             background-color: coral;
             border: solid 5px;
-            display: none;
+            display: none; /*none esconde o conteudo*/
+        }
+        /* definido Media Query - condições feitas para ver se aplica certa classe ou não, funciona como um if else*/
+        /* Somente vai mostrar quando a largura maxima da tela foi menor que 600px */
+        @media (max-width: 600px) {
+            .muito-pequeno {display: block;}
+        }
+
+        @media (max-width: 1000px), (orientation: landscape){
+            .pequeno-retrato {display: block;}
+        }
+
+        @media (min-width: 500px) and (max-width: 1000px){
+            .intervalo {display: block;}
         }
     </style>
 </head>

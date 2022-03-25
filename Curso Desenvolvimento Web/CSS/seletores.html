@@ -6,7 +6,24 @@
     <title>CSS Selectors</title>
     <link rel="stylesheet" href="css/tag.css">
     <style>
-        /* ... */
+        /* 
+        * -> aplica em toda pagina 
+        .tag - > seletor de classe
+        #aprovados -> seleor de id 
+        #aninhado > div -> pega todos elementos div dentro de aninhado (filho direto)
+        #aninhado section -> seleciona a section dentro de aninhado
+        p + ul -> irmãoes adjacentes, um depois do outro.
+        p ~ ol -> seleciona filho que são do mesmo pai (irmãos)
+        [feira] -> pega todas propriedades feira
+        [feira=casa] -> pega a propriedade feira com o valor igual a casa
+        [feira~=escritorio] -> pega qualqer proprieedade feira que tenha com valor escritorio
+        section > :nth-child(odd) -> seleciona todos os filhos de indice odd impares, ou even pares, ou ate um indice
+        section > span:nth-last-of-type(2) -> seleciona os elementos do tipo span filhos de section de indice 2
+        */
+        #aninhado > div {
+            color: #ff0;
+            background-color: #f77;
+        }
     </style>
 </head>
 

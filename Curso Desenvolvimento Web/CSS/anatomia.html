@@ -7,13 +7,31 @@
     <style>
        .seletor{
            color: white;
-           front-ize
+           font-size: 30px;
+           text-align: center;
+           /* ultiplos valores */
+           border: Solid 5px navy;/* Shorthand property */
+           /* Função */
+           width: calc(100% - 40px);
+           background-color: rgb(34, 153, 189);
        }
+       /* Usando Pseudo-classe(:) - Passando o mouse por cima */
+       .seletor:hover{
+           background-color:  orangered;
+       }
+
+       /* Usando Pseudo-elemento(::) - Primeira letra do texto */
+       .seletor::first-letter{
+            font-size: 60px;
+            
+       }
+
+
     </style>
 </head>
 
 <body>
-    <div class="selector">Conteúdo</div>
+    <div class="seletor">Conteúdo</div>
 </body>
 
 </html>

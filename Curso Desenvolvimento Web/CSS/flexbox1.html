@@ -6,7 +6,76 @@
     <title>Flexbox #01</title>
     <link rel="stylesheet" href="css/tag.css">
     <style>
-        /* ... */
+
+        div {
+            border: solid 5px dodgerblue;
+            font-size: 40px;
+            margin: 5px;
+        }
+
+        .big {
+            font-size: 1.5em;
+        }
+
+        .flex-container {
+            /* informar que essa classe e um conteiner*/
+            display: flex;
+            /* inverte para vertical */
+            flex-direction: column;
+            /* Inverte para vertival e a ordem dos box 10 a 1*/
+            flex-direction: column-reverse;
+            /* row coloca em colunas e o reverse vao de  10 a 1 comecando no canto direito */
+            flex-direction: row-reverse;
+            /* inverte para coluna */
+            flex-direction: row;
+            width: 50%;
+            height: 200px;
+            /* faz quebra de linha  respeitando a largura do box  */
+            flex-wrap: wrap;
+            /* faz quebra de linha  respeitando a largura do box invertendo a orden, ultimos por primeiros e primeiros por ultimos */
+            flex-wrap: wrap-reverse;
+            /* fica culna ao contratio sem ouverflow, acontece a quebra de linha ou coluna */
+            flex-flow: column-reverse wrap;
+            /* fica em linha sem ouverflow, acontece a quebra de linha ou coluna */
+            flex-flow: row wrap;
+
+            /* alinha a quebra tudo para o comeco */
+            justify-content: flex-start;
+            /* alinhaa quebra  tudo para o final */
+            justify-content: flex-end;
+            /* alinha a quebra no centro */
+            justify-content: center;
+            /* deixa os espacamento entre os elementos simetricos */
+            justify-content: space-around;
+            /* deixa os espacamento entre os elementos simetricos */
+            justify-content: space-around;
+            /* deixa os espacos alinhados das bordas */
+            justify-content: space-between;
+
+            /* Cross Axis */
+            height: 400px;
+            /* padrao */
+            align-items: stretch;
+            /* alinha conforme o tamanho da fonte */
+            align-items: baseline;
+            /* alinha pela  margem do topo */
+            align-items: flex-start;
+            /* alinha pela margem de baixo */
+            align-items: flex-end;
+            /* alinha pelo centro entre as duas margens */
+            align-items: center;
+
+            /* mais de uma linha */
+            /* alinha tudo pelo inicio */
+            align-content: flex-start;
+            /* alinha tudo pelo final */
+            align-content:  flex-end;
+            /* alinha tudo pelo centro */
+            align-content: center;
+
+
+        }
+
     </style>
 </head>
 
