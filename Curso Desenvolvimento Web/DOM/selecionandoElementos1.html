@@ -9,8 +9,28 @@
     <div id="primeiro">#primeiro</div>
     <div>Segundo</div>
     <div class="terceiro ultimo">.terceiro .ultimo</div>
-    <script>              
-        // ...
+    <script>  
+    
+        // altera o o elemento de ID primeiro adicionadoa classe destaque para ele 
+        document.getElementById('primeiro').classList.add('destaque')
+        
+        // pega todos elementos div e adiciona numa constante
+        const divs = document.getElementsByTagName('div')
+        console.log(divs)
+        // tranforma a constante em um array percorrendo-a e removendo a clase destaque quando encontrada 
+        Array.from(divs).forEach(e => e.classList.remove('destaque'))
+
+        // passsa para constante divsArray um spread, lista propagada, sendo assim um Array 
+        const divsArray = [...divs]
+        console.log(divsArray)
+        divsArray.forEach(e => e.classList.add('destaque'))
+
+        const ultimoElementos = document.getElementsByClassName('ultimo')
+        console.log(ultimoElementos)
+        for (let e of ultimoElementos){
+            e.classList.remove('destaque')
+        }
+        console.log(ultimoElementos)
     </script>
 </body>
 </html>

@@ -10,6 +10,20 @@
 <body class="conteudo exercicio">
     <div>Elemento</div>
     <script>
-        // ...
+        const item = document.querySelector('div')
+        item.style.position = 'absolute'
+        // quando a div receber uma movimentacao de maouse ela dispara a funcao
+        item.onmousemove = e => {
+            // recebe pelo evento 'e' a div
+            const item = e.target
+            // estiliza o ponteiro do mouse para a cao de mover 
+            item.style.cursor = 'move'
+            // quando alguem clica a vid muda de 0 para 1 e entra no if
+            if (e.buttons) {
+                // posicao eixo x e y para a movimentacao da div 
+                item.style.top = `${e.clientY - (item.clientHeight / 2)}px`
+                item.style.left = `${e.clientX - (item.clientWidth / 2)}px`
+            }
+        }
     </script>
 </body>
